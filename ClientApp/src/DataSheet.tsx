@@ -2,26 +2,21 @@
 //import { createRoot } from 'react-dom/client';
 //import * as ReactDOM from 'react-dom/client';
 import { useState } from 'react'
+import { data } from './../../data.json'
 import {
     DataSheetGrid,
- //   checkboxColumn,
     textColumn,
     keyColumn,
-  } from 'react-datasheet-grid'
-  
+  } from 'react-datasheet-grid'  
   import 'react-datasheet-grid/dist/style.css'
   
   const Table = () => {
+
     const [ data, setData ] = useState([
       { building: 'house', date: '0', weather: '1', consumption: '2' },
-   //   { active: false, firstName: 'Jeff', lastName: 'Bezos' },
     ])
   
     const columns = [
-   /*   {
-        ...keyColumn('active', checkboxColumn),
-        title: 'Active',
-      },*/
       {
         ...keyColumn('building', textColumn),
         title: 'Building',
@@ -39,11 +34,11 @@ import {
         title: 'Consumption',
       },
     ]
-  
+
     return (
       <DataSheetGrid
         value={data}
-     //   onChange={setData}
+        onChange={setData}
         columns={columns}
       />
     )
