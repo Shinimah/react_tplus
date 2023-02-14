@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import logo from './logo.svg'
+//import { useState } from 'react'
+//import logo from './logo.svg'
 import './App.css'
-import {
-  DataSheetGrid,
-  checkboxColumn,
-  textColumn,
-  keyColumn,
-} from 'react-datasheet-grid'
+import { DataSheetGrid } from 'react-datasheet-grid'
+import Table from './DataSheet' 
+import 'react-datasheet-grid/dist/style.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
+    return (
+      <main>
+      <h1>Hi</h1>
+      <DataSheetGrid 
+      />
+      <Table />
+      </main>
+      /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
@@ -44,8 +45,8 @@ function App() {
           </a>
         </p>
       </header>
-    </div>
-  )
-}
+    </div>*/
+    )
+  }
 
-export default App
+export default App;
