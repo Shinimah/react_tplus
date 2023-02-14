@@ -13,7 +13,7 @@ import {
   const Table = () => {
 
     const [ data, setData ] = useState([
-      { building: 'house', date: '0', weather: '1', consumption: '2' },
+      { building: data.houses, date: '0', weather: '1', consumption: '2' },
     ])
   
     const columns = [
