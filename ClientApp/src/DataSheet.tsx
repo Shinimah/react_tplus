@@ -1,8 +1,9 @@
 //import React from 'react'
 //import { createRoot } from 'react-dom/client';
 //import * as ReactDOM from 'react-dom/client';
+import First from './Test' 
 import { useState } from 'react'
-import { data } from './../../data.json'
+//import { data } from './../../data.json'
 import {
     DataSheetGrid,
     textColumn,
@@ -13,7 +14,7 @@ import {
   const Table = () => {
 
     const [ data, setData ] = useState([
-      { building: data.houses, date: '0', weather: '1', consumption: '2' },
+      { building: 'data.houses', date: '0', weather: '1', consumption: '2' },
     ])
   
     const columns = [
@@ -36,11 +37,12 @@ import {
     ]
 
     return (
-      <DataSheetGrid
+      <main><DataSheetGrid
         value={data}
         onChange={setData}
         columns={columns}
       />
+      </main>
     )
   }
 

@@ -23,6 +23,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.title {
+  margin: 20px;
+  text-align: center;
+}
+
+.graphic {
+  margin: 20px;
+}
 
 .App-link {
   color: #61dafb;
